@@ -166,7 +166,7 @@ class PerceptionNode : public rclcpp::Node
         }
 
         void publishPointCloud(rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr publisher,
-                               pcl::PointCloud<pcl::PointXYZ> point_cloud)
+                               pcl::PointCloud<pcl::PointXYZ> point_cloud) 
         {
 
             sensor_msgs::msg::PointCloud2::SharedPtr pc2_cloud(new sensor_msgs::msg::PointCloud2);
